@@ -55,9 +55,9 @@ div.innerHTML=`<div class="card w-80 h-80 mt-10 mx-14 md:mx-8 lg:mx-auto ">
   <div>
     <h2 class="card-title">${catagory.title}
     </h2>
-    <p>${catagory.authors.map((pp)=>pp.profile_name)} <span>${catagory.authors.map((pp)=>pp?.verified)}
+    <p>${catagory.authors.map((pp)=>pp.profile_name)} <span>${catagory.authors.map((pp)=>pp.verified)}
       <span></p>
-    <p>${catagory.others.views}</p>
+    <p>${catagory.others.views} views</p>
   </div>
   </div>
 </div>
