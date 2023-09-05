@@ -42,7 +42,7 @@ const handleid=async(category_id)=>
 data.data.forEach((catagory)=>{
 
 const div=document.createElement('div')
-div.innerHTML=`<div class="card w-80 h-80 mt-10 lg:mx-auto ">
+div.innerHTML=`<div class="card w-80 h-80 mt-10 mx-14 md:mx-8 lg:mx-auto ">
 
 <figure><img class="relative" src="${catagory.thumbnail}" alt="videos" /><p class="   absolute bg-black text-white right-1 bottom-36" id="time" ><span>${time(catagory.others.posted_date)} </span><span>${minutes(catagory.others.posted_date)
 }</span></p></figure>
@@ -94,7 +94,7 @@ const drawing=async(id)=>
   const div=document.createElement("div")
   
   div.innerHTML=`
-    <img class="flex lg:mx-40" src="Icon.png" />
+    <img class="flex mx-36 md:mx-40" src="Icon.png" />
     <p class="mt-4">Oops!! Sorry, There is no</p>
     <p class="mt-4 ">content here</p>
 
@@ -144,3 +144,9 @@ const time=(num)=>
 
 loadvideos();
 handleid(1000);
+
+
+
+
+
+
